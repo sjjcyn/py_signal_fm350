@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信号信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>信号信息</h1>
+    <div class="progress-container">
+        <h3>参考信号接收质量:RSRQ</h3>
+        <div class="progress-bar">
+            <div id="rsrq-fill" class="progress-fill"></div>
+        </div>
+        <div id="rsrq-value" class="signal-value"></div>
+    </div>
+    <div class="progress-container">
+        <h3>参考信号接收强度:RSRP</h3>
+        <div class="progress-bar">
+            <div id="rsrp-fill" class="progress-fill"></div>
+        </div>
+        <div id="rsrp-value" class="signal-value"></div>
+    </div>
+    <div class="progress-container">
+        <h3>参考信噪比SINR</h3>
+        <div class="progress-bar">
+            <div id="sinr-fill" class="progress-fill"></div>
+        </div>
+        <div id="sinr-value" class="signal-value"></div>
+    </div>
+    <button id="refresh-button">更新</button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
