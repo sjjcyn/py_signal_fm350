@@ -1,1 +1,33 @@
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 20px;
+    transition: width 0.5s;
+}
+
+.progress-fill.low {
+    background-color: red;
+}
+
+.progress-fill.medium {
+    background-color: yellow;
+}
+
+.progress-fill.high {
+    background-color: green;
+}
+
+.signal-value {
+    margin-top: 10px;
+    font-size: 16px;
+}
 
