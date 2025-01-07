@@ -1,5 +1,5 @@
 #!/bin/sh
-
+pip install pyserial 
 # 创建 /etc/init.d/py_signal_fm350 文件并写入脚本内容
 cat << 'EOF' > /etc/init.d/py_signal_fm350
 #!/bin/sh /etc/rc.common
